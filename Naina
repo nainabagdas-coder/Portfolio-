@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naina Beauty Parlour</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:black;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#ff69b4;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#ff69b4;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+max-width:600px;
+color:#eee;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 30px;
+background:#ff69b4;
+border:none;
+border-radius:30px;
+color:white;
+text-decoration:none;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#ff69b4;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1d1d1d;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+color:#aaa;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Naina Beauty</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+
+<h1>Welcome to <span>Naina Beauty Parlour</span></h1>
+
+<p>
+Glow with confidence and beauty.
+Professional makeup, hair styling, skincare and bridal services.
+</p>
+
+<a href="#contact" class="btn">Book Now</a>
+
+</div>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<p style="text-align:center; line-height:1.8; color:#ddd;">
+Naina Beauty Parlour offers professional beauty and makeup services
+with modern styling and premium care for every client.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Bridal Makeup</h3>
+<p>Professional bridal makeup for weddings and events.</p>
+</div>
+
+<div class="card">
+<h3>Hair Styling</h3>
+<p>Modern haircuts, smoothening and styling services.</p>
+</div>
+
+<div class="card">
+<h3>Facial & Skincare</h3>
+<p>Glow treatments and skincare services.</p>
+</div>
+
+<div class="card">
+<h3>Nail Art</h3>
+<p>Creative nail extensions and nail art designs.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200">
+
+<img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200">
+
+<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Contact</h2>
+
+<p>📍 Kolkata, India</p>
+<p>📞 +91 9876543210</p>
+<p>📷 Instagram: @nainabeauty</p>
+
+<a href="#" class="btn">Call Now</a>
+
+</section>
+
+<footer>
+© 2026 Naina Beauty Parlour | All Rights Reserved
+</footer>
+
+</body>
+</html>
